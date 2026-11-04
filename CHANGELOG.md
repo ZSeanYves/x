@@ -6,7 +6,7 @@
 
 - Synchronous `@fs.File` APIs for native, Wasm, and Node.js, including
   configurable file creation, independent read/write positions, positional I/O,
-  append mode, and file synchronization. Existing filesystem APIs remain available.
+  append mode, and file synchronization. Existing filesystem APIs remain available. (#1)
 
 ## [0.5.7] - 2026-10-30
 
