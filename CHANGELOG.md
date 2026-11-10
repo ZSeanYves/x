@@ -4,6 +4,9 @@
 
 ### Added
 
+- Compatibility checks for optional file timestamp synchronization on Windows.
+  This diagnostic branch does not change filesystem behavior.
+
 - Synchronous `@fs.File` APIs for native and Wasm, including
   configurable file creation, independent read/write positions, positional I/O,
   append mode, and file synchronization. Appending preserves existing contents

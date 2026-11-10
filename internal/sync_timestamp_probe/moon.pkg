@@ -1,0 +1,13 @@
+#cfg(target="native")
+import {
+  "moonbitlang/x/fs" @xfs,
+  "moonbitlang/core/async",
+  "moonbitlang/core/async/fs" @async_fs,
+  "moonbitlang/core/env",
+} for "test"
+
+options(
+  "allow-experimental-packages": true,
+  "native-stub": [ "probe.c" ],
+  targets: { "probe_test.mbt": [ "native" ] },
+)
