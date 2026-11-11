@@ -13,7 +13,7 @@
 // limitations under the License.
 
 ///|
-#cfg(any(target="native", target="wasm"))
+#cfg(any(target="native", target="wasm", target="js"))
 test "write_file appends without an explicit creation mode" {
   let path = file_test_path()
   @fs.write_file(path, b"old", sync=NoSync)
@@ -49,7 +49,7 @@ test "new file API reuses core async OS errors" {
 }
 
 ///|
-#cfg(any(target="native", target="wasm"))
+#cfg(any(target="native", target="wasm", target="js"))
 test "write_file append creates missing files and honors explicit truncation" {
   let path = file_test_path()
   @fs.write_file(path, b"", append=true, sync=NoSync)
@@ -67,7 +67,7 @@ test "write_file append creates missing files and honors explicit truncation" {
 }
 
 ///|
-#cfg(any(target="native", target="wasm"))
+#cfg(any(target="native", target="wasm", target="js"))
 test "exact reads report ReaderClosed and retain partial progress" {
   let path = file_test_path()
   @fs.write_file(path, b"abc", sync=NoSync)

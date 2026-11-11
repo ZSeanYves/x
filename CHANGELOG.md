@@ -4,6 +4,9 @@
 
 ### Added
 
+- Node.js support for the synchronous `@fs.File` APIs, including positional I/O,
+  append mode, file synchronization, and system error diagnostics.
+
 - Synchronous `@fs.File` APIs for native and Wasm, including
   configurable file creation, independent read/write positions, positional I/O,
   append mode, and file synchronization. `read_into` and `read_into_at` accept
